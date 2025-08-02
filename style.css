@@ -1,0 +1,128 @@
+/* General Body y Tipografía Base */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuentes limpias sans-serif */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #fcfcfc; /* Fondo muy claro, casi blanco */
+    color: #333; /* Gris oscuro para texto principal */
+}
+
+/* Encabezado (Header) */
+header {
+    background: #ffffff; /* Encabezado blanco */
+    color: #222; /* Texto oscuro para encabezado */
+    padding: 2rem 0; /* Más espaciado para sensación de amplitud */
+    text-align: center;
+    border-bottom: 1px solid #eee; /* Separador sutil */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Título más grande e impactante */
+    color: #222;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Navegación (Nav) */
+nav {
+    background: #ffffff; /* Fondo blanco */
+    padding: 1rem 0; /* Más espaciado */
+    border-bottom: 1px solid #eee; /* Separador sutil */
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Más espaciado entre enlaces */
+}
+
+nav ul li a {
+    color: #555; /* Gris medio para enlaces */
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-weight: bold; /* Enlaces ligeramente más destacados */
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Color de acento sutil al pasar el ratón (un azul) */
+    /* text-decoration: underline; */ /* Opcional: subrayar al pasar el ratón */
+}
+
+/* Contenido Principal (Main) */
+main {
+    padding: 40px 20px; /* Más espaciado para amplitud */
+    max-width: 800px; /* Ligeramente más estrecho para enfocar el contenido */
+    margin: 40px auto; /* Más margen superior/inferior */
+    background: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Esquinas ligeramente redondeadas */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra muy sutil y difusa */
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px; /* Más espacio entre secciones */
+    padding-bottom: 20px; /* Espaciado dentro de la sección */
+    border-bottom: 1px solid #eee; /* Separador sutil */
+}
+
+section:last-child {
+    border-bottom: none; /* Sin borde en la última sección */
+    margin-bottom: 0;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 1em;
+    text-align: center; /* Títulos de sección centrados para un look limpio */
+}
+
+/* Items de Proyecto */
+.proyecto-item {
+    background: #fefefe; /* Fondo muy claro para los items */
+    border: 1px solid #eee; /* Borde muy sutil */
+    padding: 25px; /* Más espaciado interno */
+    margin-bottom: 25px; /* Más espacio entre items */
+    border-radius: 6px; /* Esquinas ligeramente redondeadas */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efecto suave al pasar el ratón */
+}
+
+.proyecto-item:hover {
+    transform: translateY(-3px); /* Pequeño levantamiento al pasar el ratón */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* Sombra ligeramente más pronunciada al pasar el ratón */
+}
+
+.proyecto-item h3 {
+    color: #007bff; /* Color de acento para títulos de proyecto */
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.proyecto-item ul {
+    list-style: none; /* Eliminar viñetas por defecto */
+    padding-left: 0; /* Eliminar padding por defecto */
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.proyecto-item ul li {
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.proyecto-item ul li::before {
+    content: "•"; /* Viñeta personalizada */
+    color: #007bff; /* Color de acento para las viñetas */
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio de Evidencias - Luis Sanchez Anselmo  </title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Hola, soy Luis Sanchez Anselmo </h1>
+        <p>¡Bienvenido a mi portafolio de evidencias!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="proyectos">
+            <h2>Mis Proyectos de Colab</h2>
+            <p>Aquí encontrarás algunos de mis trabajos realizados en Google Colab.</p>
+
+            <div class="proyecto-item">
+                <h3>Proyecto 1: Análisis de Datos con Pandas</h3>
+                <p>Realicé un análisis exploratorio de datos (EDA) del dataset público de Titanic, que incluyó la limpieza de datos, la generación de visualizaciones clave y el cálculo de estadísticas descriptivas.</p>
+                <p><small>Dataset original disponible en: <a href="https://www.kaggle.com/c/titanic/data" target="_blank">Kaggle - Titanic: Machine Learning from Disaster</a></small></p>
+                <p>Puedes ver el cuaderno aquí: <a href="https://colab.research.google.com/drive/1wj9E7ErKjd4z3Vqf4O2igMJlbXmy-1RU" target="_blank">Ver cuaderno en Google Colab</a></p>
+            </div>
+
+            <div class="proyecto-item">
+                <h3>Proyecto 2: Análisis y Predicción de Capacidad de Placas Atornilladas</h3>
+                <p>En este proyecto, realicé un análisis de datos de pruebas experimentales de placas atornilladas. El objetivo principal fue explorar las características de los datos y desarrollar un modelo predictivo para la carga máxima (Fmax).</p>
+                <ul>
+                    <li>**Estadísticos Descriptivos:** Calculé las principales métricas para comprender la distribución de las variables.</li>
+                    <li>**Visualizaciones Clave:** Generé histogramas para la distribución de Fmax, diagramas de dispersión para analizar la relación entre Fmax y la relación borde/diámetro (e1/do), y un mapa de calor para visualizar las correlaciones entre todas las variables.</li>
+                    <li>**Modelado Predictivo:** Implementé un modelo de Regresión Lineal para predecir la carga máxima (Fmax) basándome en diversas características geométricas y de material de las placas, evaluando su rendimiento con métricas como RMSE y R².</li>
+                </ul>
+                <p><small>Fuente de los datos: Adaptado de: **Pascual, C., & Galán, S. (2021). Experimental data from bolted connections with different end distances. Zenodo.** <a href="https://zenodo.org/records/4459750" target="_blank">Enlace al Dataset en Zenodo</a></small></p>
+                <p>Puedes ver el cuaderno aquí: <a href="https://colab.research.google.com/drive/1Gugtjc6l4wq6af4MHOUHQ9C62vt3CDnP" target="_blank">Ver cuaderno en Google Colab</a></p>
+            </div>
+
+            <div class="proyecto-item">
+                <h3>Proyecto 3: Conversión Celsius a Fahrenheit con Red Neuronal Lineal</h3>
+                <p>En este proyecto fundamental de Machine Learning, desarrollé una red neuronal simple utilizando **TensorFlow y Keras** para aprender la relación entre temperaturas en grados Celsius y Fahrenheit.</p>
+                <ul>
+                     <li>**Arquitectura del Modelo:** Se implementó una red neuronal con una única capa densa (fully connected) y función de activación lineal, demostrando cómo incluso modelos simples pueden aprender relaciones matemáticas directas.</li>
+                     <li>**Entrenamiento:** El modelo fue entrenado con pares de datos Celsius-Fahrenheit, utilizando el optimizador Adam y la pérdida de error cuadrático medio (MSE) para ajustar los pesos y sesgos.</li>
+                     <li>**Visualización:** Se graficó el historial de pérdida del entrenamiento para monitorear la convergencia del modelo.</li>
+                     <li>**Predicción:** Una vez entrenado, el modelo es capaz de predecir la temperatura en Fahrenheit para nuevos valores en Celsius, ilustrando la capacidad de generalización de la red.</li>
+                </ul>
+                <p>Puedes ver el cuaderno aquí: <a href="https://colab.research.google.com/drive/1hmBnrwNOPL5GAK3ttjUczfDFUB5rVUex#scrollTo=RRMJdUSH6ZuL" target="_blank">Ver cuaderno en Google Colab</a></p>
+            </div
+
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Soy un Ingeniero civil especializado en estructuras de acero, en proceso de titulación que ha descubierto este fascinante mundo de Python y el análisis.</p>
+            <p>Me he estado preparando y aprendiendo gracias a INROADS, COURSERA y Google.</p>
+            <p>Actualmente me he convertido en una persona con aprendizaje autodidacta, claro con la ayuda de los cursos que he tomado mejoro esto.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme en: luissanchez9520@gmail.com o www.linkedin.com/in/luis-sánchez-anselmo-71b6a520b</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Luis Sanchez Anselmo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
