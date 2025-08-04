@@ -3,30 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio de Evidencias - Luis Sanchez Anselmo  </title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Portafolio de Luis Sánchez Anselmo | Ingeniería Civil & Data Science</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Hola, soy Luis Sanchez Anselmo </h1>
+        <img src="https://raw.githubusercontent.com/luissanchezanselmo/luissanchezanselmo.github.io/main/Gemini_Generated_Image_nc6jdygc6j.png" alt="Banner de Luis Sánchez Anselmo - Ingeniería Civil y Data Science" style="width:100%; height:auto; display:block; margin-bottom: 20px;">
+        <h1>Hola, soy Luis Sánchez Anselmo </h1>
         <p>¡Bienvenido a mi portafolio de evidencias!</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
     <main>
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            [cite_start]<p>Soy un <strong>Ingeniero Civil</strong> con una especialización en estructuras y una sólida base académica del Instituto Politécnico Nacional (ESIA Zacatenco)[cite: 6]. Mi pasión se centra en la aplicación de la <strong>ingeniería estructural y sísmica</strong> combinada con el <strong>análisis de datos y Machine Learning</strong> para resolver problemas complejos.</p>
+
+            [cite_start]<p>He colaborado en la <strong>Secretaría de Movilidad (SEMOVI)</strong> de la Ciudad de México, donde diseñé una base de datos que redujo en un 90% los tiempos de búsqueda de rutas[cite: 45]. [cite_start]También he compartido mi vocación por la enseñanza, impartiendo clases y talleres de programación en <strong>Python</strong> [cite: 50][cite_start], así como manejo avanzado de <strong>Excel</strong> [cite: 50] [cite_start]y <strong>Google Sheets</strong>[cite: 50].</p>
+
+            <h3>Habilidades y Certificaciones</h3>
+            [cite_start]<p>Mis habilidades técnicas incluyen el uso de software como <strong>STAAD.Pro</strong> [cite: 22][cite_start], <strong>SAFE</strong> [cite: 40][cite_start], <strong>AutoCAD</strong> [cite: 22] [cite_start]y <strong>Revit</strong>[cite: 25], complementadas con una formación en análisis de datos y IA a través de certificaciones de Google, entre las que destacan:</p>
+            <ul>
+                <li><strong>Google Advanced Data Analytics</strong> (en curso)</li>
+                [cite_start]<li><strong>Google Project Management</strong> [cite: 19]</li>
+                [cite_start]<li><strong>Google AI Essentials</strong> [cite: 20]</li>
+                <li><strong>Foundations of Data Science</strong></li>
+                [cite_start]<li><strong>Google Cloud Computing Foundations</strong> [cite: 16]</li>
+                <li><strong>Get Started with Python</strong></li>
+            </ul>
+
+            <p>Actualmente busco oportunidades donde pueda aplicar mi perfil único para contribuir a soluciones innovadoras en la ingeniería.</p>
+        </section>
+
         <section id="proyectos">
             <h2>Mis Proyectos de Colab</h2>
-            <p>Aquí encontrarás algunos de mis trabajos realizados en Google Colab.</p>
+            <p>Aquí encontrarás algunos de mis trabajos realizados en Google Colab, combinando mi experiencia en ingeniería y mi pasión por el análisis de datos.</p>
 
             <div class="proyecto-item">
-                <h3>Proyecto 1: Análisis de Datos con Pandas</h3>
+                <h3>Proyecto 1: Análisis de Datos con Pandas (Titanic)</h3>
                 <p>Realicé un análisis exploratorio de datos (EDA) del dataset público de Titanic, que incluyó la limpieza de datos, la generación de visualizaciones clave y el cálculo de estadísticas descriptivas.</p>
                 <p><small>Dataset original disponible en: <a href="https://www.kaggle.com/c/titanic/data" target="_blank">Kaggle - Titanic: Machine Learning from Disaster</a></small></p>
                 <p>Puedes ver el cuaderno aquí: <a href="https://colab.research.google.com/drive/1wj9E7ErKjd4z3Vqf4O2igMJlbXmy-1RU" target="_blank">Ver cuaderno en Google Colab</a></p>
@@ -38,17 +59,19 @@
                 <ul>
                     <li><strong>Estadísticos Descriptivos:</strong> Calculé las principales métricas para comprender la distribución de las variables.</li>
                     <li><strong>Visualizaciones Clave:</strong> Generé histogramas para la distribución de Fmax, diagramas de dispersión para analizar la relación entre Fmax y la relación borde/diámetro (e1/do), y un mapa de calor para visualizar las correlaciones entre todas las variables.</li>
-                    <li><strong>Predictivo:</strong> Implementé un modelo de Regresión Lineal para predecir la carga máxima (Fmax) basándome en diversas características geométricas y de material de las placas, evaluando su rendimiento con métricas como RMSE y R².</li>
+                    <li><strong>Modelo Predictivo:</strong> Implementé un modelo de Regresión Lineal para predecir la carga máxima (Fmax) basándome en diversas características geométricas y de material de las placas, evaluando su rendimiento con métricas como RMSE y R².</li>
                 </ul>
                 <p><small>Fuente de los datos: Adaptado de: <strong>Pascual, C., & Galán, S. (2021)</strong>. Experimental data from bolted connections with different end distances. Zenodo. <a href="https://zenodo.org/records/4459750" target="_blank">Enlace al Dataset en Zenodo</a></small></p>
                 <p>Puedes ver el cuaderno aquí: <a href="https://colab.research.google.com/drive/1Gugtjc6l4wq6af4MHOUHQ9C62vt3CDnP" target="_blank">Ver cuaderno en Google Colab</a></p>
             </div>
 
             <div class="proyecto-item">
-                <h3>Proyecto 3: Analis de Dínamica Estructural</h3>
-                <p>En este proyecto vemos la Respuesta Dinamica de una estructura idealizada ante una exitación sismica.</p>
+                <h3>Proyecto 3: Análisis de Dinámica Estructural (Vibración Libre SDOF)</h3>
+                <p>Este proyecto de Google Colab implementa el análisis completo de un sistema de un grado de libertad (SDOF) sometido a vibración libre no amortiguada. Se calcula la ecuación de movimiento utilizando el Principio de D'Alembert y se visualiza la respuesta del sistema en términos de desplazamiento, velocidad y aceleración.</p>
                 <ul>
-                    <li><strong>Cálculos:</strong> Este proyecto de Google Colab implementa el análisis de un sistema de un grado de libertad (SDOF) sometido a vibración libre no amortiguada. Se calcula la ecuación de movimiento utilizando el Principio de D'Alembert y se visualiza la respuesta del sistema en términos de desplazamiento, velocidad y aceleración</li>
+                    <li><strong>Cálculos Detallados:</strong> Determinación de parámetros del sistema (masa, rigidez), cálculo de frecuencia natural y constantes de integración.</li>
+                    <li><strong>Visualización Completa:</strong> Graficación del desplazamiento, velocidad y aceleración a lo largo del tiempo, demostrando la respuesta dinámica del sistema.</li>
+                    <li><strong>Fundamentos Teóricos:</strong> Aplicación del Principio de D'Alembert para la formulación de la ecuación diferencial del movimiento.</li>
                 </ul>
                 <p>Puedes ver el cuaderno aquí: <a href="https://colab.research.google.com/drive/1MDMpRdqxQOlF25v6dx-ynaGU82fKddn1#scrollTo=2Yh-TG5xYCwY" target="_blank">Ver cuaderno en Google Colab</a></p>
             </div>
@@ -57,32 +80,27 @@
                 <h3>Proyecto 4: Conversión Celsius a Fahrenheit con Red Neuronal Lineal</h3>
                 <p>En este proyecto fundamental de Machine Learning, desarrollé una red neuronal simple utilizando <strong>TensorFlow y Keras</strong> para aprender la relación entre temperaturas en grados Celsius y Fahrenheit.</p>
                 <ul>
-                     <li><strong>Arquitectura del Modelo:</strong> Se implementó una red neuronal con una única capa densa (fully connected) y función de activación lineal, demostrando cómo incluso modelos simples pueden aprender relaciones matemáticas directas.</li>
-                     <li><strong>Entrenamiento:</strong> El modelo fue entrenado con pares de datos Celsius-Fahrenheit, utilizando el optimizador Adam y la pérdida de error cuadrático medio (MSE) para ajustar los pesos y sesgos.</li>
-                     <li><strong>Visualización:</strong> Se graficó el historial de pérdida del entrenamiento para monitorear la convergencia del modelo.</li>
-                     <li><strong>Visualización:</strong> Una vez entrenado, el modelo es capaz de predecir la temperatura en Fahrenheit para nuevos valores en Celsius, ilustrando la capacidad de generalización de la red.</li>
+                    <li><strong>Arquitectura del Modelo:</strong> Se implementó una red neuronal con una única capa densa (fully connected) y función de activación lineal, demostrando cómo incluso modelos simples pueden aprender relaciones matemáticas directas.</li>
+                    <li><strong>Entrenamiento:</strong> El modelo fue entrenado con pares de datos Celsius-Fahrenheit, utilizando el optimizador Adam y la pérdida de error cuadrático medio (MSE) para ajustar los pesos y sesgos.</li>
+                    <li><strong>Generalización y Predicción:</strong> Una vez entrenado, el modelo es capaz de predecir la temperatura en Fahrenheit para nuevos valores en Celsius, ilustrando la capacidad de generalización de la red.</li>
                 </ul>
                 <p>Puedes ver el cuaderno aquí: <a href="https://colab.research.google.com/drive/1hmBnrwNOPL5GAK3ttjUczfDFUB5rVUex#scrollTo=RRMJdUSH6ZuL" target="_blank">Ver cuaderno en Google Colab</a></p>
-            </div
+            </div>
 
-        </section>
-
-        <section id="sobre-mi">
-            <h2>Sobre Mí</h2>
-            <p>Hola soy Luis Sánchez Anselmo,Soy un Ingeniero Civil con una sólida base académica del Instituto Politécnico Nacional (ESIA Zacatenco), actualmente en proceso de titulación. Mi pasión se centra en la aplicación innovadora de la ingeniería estructural y sísmica combinada con el análisis de datos y el Machine Learning para resolver problemas complejos.</p>
-            <p>Mi experiencia incluye el análisis y la visualización de datos geográficos para la Secretaría de Movilidad (SEMOVI) de la Ciudad de México, donde contribuí a la mejora de la movilidad urbana. Además, he cultivado una fuerte vocación por la enseñanza, impartiendo clases de ciencias exactas y talleres de programación en Python y manejo avanzado de Excel y Google Sheets.</p>
-            <p>Me entusiasma abordar desafíos que requieren una fusión de conocimientos técnicos en ingeniería con metodologías de ciencia de datos. Mis proyectos en GitHub demuestran mi capacidad para</p>
-            <p>Realizar análisis dinámicos y estructurales complejos, como la modelación de sistemas de un grado de libertad y el cálculo de la ecuación de movimiento</p>
-        </section>
+            </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Puedes contactarme en: luissanchez9520@gmail.com o www.linkedin.com/in/luis-sánchez-anselmo-71b6a520b</p>
+            <p>Puedes contactarme en:</p>
+            <ul>
+                <li><strong>Correo Electrónico:</strong> <a href="mailto:luissanchez9520@gmail.com">luissanchez9520@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/luis-sánchez-anselmo-71b6a520b" target="_blank">Mi Perfil de LinkedIn</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Luis Sanchez Anselmo. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Luis Sánchez Anselmo. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
