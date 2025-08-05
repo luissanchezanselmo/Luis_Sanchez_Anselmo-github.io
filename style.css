@@ -1,7 +1,11 @@
 body {
-    /* Fondo principal con un degradado de negro a un azul muy oscuro */
-    background: linear-gradient(to right, #000000, #000033);
-    color: #e0e0e0; /* Color de texto claro para que contraste */
+    /* Múltiples capas de degradado para simular un efecto texturizado */
+    background:
+        radial-gradient(ellipse at top left, rgba(255, 255, 255, 0.1) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom right, rgba(0, 0, 255, 0.2) 0%, transparent 70%),
+        linear-gradient(to right, #0a1128, #001f3f, #0a1128);
+    background-size: 100% 100%;
+    color: #f0f8ff; /* Blanco marfil para un mejor contraste */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -11,21 +15,22 @@ body {
 header {
     text-align: center;
     padding: 2rem 0;
-    background-color: #00001a; /* Un color muy oscuro para el header */
+    background-color: rgba(10, 17, 40, 0.7);
+    border-bottom: 2px solid rgba(0, 31, 63, 0.5);
 }
 
 header h1 {
     margin-top: 0;
     font-size: 2.5rem;
-    color: #00BFFF; /* Un azul brillante para el título principal */
+    color: #4dc2ff; /* Azul brillante para el título principal */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    background-color: #000020; /* Color sólido para el menú */
-    border-bottom: 2px solid #00BFFF;
+    background-color: rgba(0, 31, 63, 0.8);
+    border-bottom: 2px solid #4dc2ff;
 }
 
 nav ul li {
@@ -34,14 +39,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e0e0e0;
+    color: #f0f8ff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #00BFFF;
+    color: #4dc2ff;
 }
 
 main {
@@ -51,8 +56,7 @@ main {
 }
 
 section {
-    /* Color de fondo para las secciones principales, con sombra para dar un efecto 3D */
-    background-color: #000028;
+    background-color: rgba(10, 17, 40, 0.9);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -60,8 +64,8 @@ section {
 }
 
 h2, h3, h4 {
-    color: #00BFFF;
-    border-bottom: 1px solid #00BFFF;
+    color: #4dc2ff;
+    border-bottom: 1px solid #4dc2ff;
     padding-bottom: 5px;
 }
 
@@ -71,7 +75,7 @@ ul {
 }
 
 a {
-    color: #00BFFF;
+    color: #4dc2ff;
     text-decoration: none;
 }
 
@@ -81,7 +85,7 @@ a:hover {
 
 .proyecto-item {
     margin-bottom: 20px;
-    border: 1px solid #000033;
+    border: 1px solid #001f3f;
     padding: 15px;
     border-radius: 5px;
 }
@@ -89,8 +93,8 @@ a:hover {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #00001a;
-    color: #777;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #aaa;
 }
 
 img {
