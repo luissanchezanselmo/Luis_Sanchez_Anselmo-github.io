@@ -1,6 +1,6 @@
 body {
-    /* Degradado sutil de negro a un gris muy oscuro */
-    background: linear-gradient(to right, #000000, #111111);
+    /* Degradado de negro a un verde oscuro tecnológico */
+    background: linear-gradient(to right, #000000, #003300);
     color: #e0e0e0; /* Color de texto claro para que contraste */
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -17,7 +17,7 @@ header {
 header h1 {
     margin-top: 0;
     font-size: 2.5rem;
-    color: #ffffff; /* Color blanco para el título principal */
+    color: #00FF00; /* Un verde brillante para el título principal */
 }
 
 nav ul {
@@ -25,7 +25,7 @@ nav ul {
     padding: 0;
     text-align: center;
     background-color: #000000;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #00FF00;
 }
 
 nav ul li {
@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffffff;
+    color: #00FF00;
 }
 
 main {
@@ -59,8 +59,8 @@ section {
 }
 
 h2, h3, h4 {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    color: #00FF00;
+    border-bottom: 1px solid #00FF00;
     padding-bottom: 5px;
 }
 
@@ -70,7 +70,7 @@ ul {
 }
 
 a {
-    color: #ffffff;
+    color: #00FF00;
     text-decoration: none;
 }
 
@@ -80,7 +80,7 @@ a:hover {
 
 .proyecto-item {
     margin-bottom: 20px;
-    border: 1px solid #111111;
+    border: 1px solid #003300;
     padding: 15px;
     border-radius: 5px;
 }
