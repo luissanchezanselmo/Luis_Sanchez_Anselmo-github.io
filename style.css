@@ -1,168 +1,105 @@
-/* General Body y Tipografía Base (Tema Oscuro) */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuentes limpias sans-serif */
-    line-height: 1.6;
+    /* Degradado de morado oscuro a morado brillante */
+    background: linear-gradient(to right, #1E003D, #3A005C);
+    color: #e0e0e0; /* Color de texto claro para que contraste */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #1a1a1a; /* Fondo muy oscuro, casi negro */
-    color: #f0f0f0; /* Texto claro para contraste */
+    line-height: 1.6;
 }
 
-/* Encabezado (Header) */
 header {
-    background: #222222; /* Encabezado un poco más claro que el fondo */
-    color: #ffffff; /* Texto blanco puro para encabezado */
-    padding: 2rem 0;
     text-align: center;
-    border-bottom: 1px solid #333333; /* Separador sutil oscuro */
+    padding: 2rem 0;
+    background-color: rgba(30, 0, 61, 0.5); /* Usando el color base del degradado */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #ffffff;
-}
-
-header p {
-    font-size: 1.1em;
-    color: #cccccc; /* Gris claro para el párrafo */
-}
-
-/* Navegación (Nav) */
-nav {
-    background: #222222; /* Fondo de navegación un poco más claro */
-    padding: 1rem 0;
-    border-bottom: 1px solid #333333;
-    text-align: center;
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #FF0080; /* Usando el color rosa para el título principal */
 }
 
 nav ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0;
-    list-style: none;
+    text-align: center;
+    background-color: #1E003D;
+    border-bottom: 2px solid #FF0080;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #dddddd; /* Enlaces de navegación claros */
+    color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #00bcd4; /* Un azul cian brillante como acento en hover */
+    color: #FF0080;
 }
 
-/* Contenido Principal (Main) */
 main {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 40px auto;
-    background: #2b2b2b; /* Fondo del contenido principal (panel) */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Sombra más pronunciada en oscuro */
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-/* Secciones */
 section {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #444444; /* Separador más oscuro */
+    background-color: rgba(30, 0, 61, 0.7);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-section:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+h2, h3, h4 {
+    color: #FF0080;
+    border-bottom: 1px solid #FF0080;
+    padding-bottom: 5px;
 }
 
-section h2 {
-    font-size: 2em;
-    color: #ffffff; /* Títulos de sección blancos */
-    margin-bottom: 1em;
-    text-align: center;
+ul {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
-/* Items de Proyecto */
-.proyecto-item {
-    background: #363636; /* Fondo de los ítems de proyecto */
-    border: 1px solid #444444; /* Borde oscuro */
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 6px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.proyecto-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.5); /* Sombra más fuerte al pasar el ratón */
-}
-
-.proyecto-item h3 {
-    color: #00bcd4; /* Color de acento para títulos de proyecto */
-    margin-top: 0;
-    font-size: 1.5em;
-    margin-bottom: 0.8em;
-}
-
-.proyecto-item ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.proyecto-item ul li {
-    margin-bottom: 0.5em;
-    color: #cccccc; /* Texto de lista claro */
-}
-
-.proyecto-item ul li::before {
-    content: "•";
-    color: #00bcd4; /* Color de acento para las viñetas */
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-.proyecto-item p {
-    margin-bottom: 1em;
-    color: #dddddd; /* Párrafos claros */
-}
-
-.proyecto-item a {
-    color: #00bcd4; /* Color de acento para los enlaces */
+a {
+    color: #FF0080;
     text-decoration: none;
-    font-weight: bold;
-    transition: text-decoration 0.3s ease;
 }
 
-.proyecto-item a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Pie de página (Footer) */
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #222222; /* Pie de página oscuro */
-    color: #aaaaaa; /* Texto de pie de página claro */
-    border-top: 1px solid #333333;
-    font-size: 0.9em;
+.proyecto-item {
+    margin-bottom: 20px;
+    border: 1px solid #3A005C;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-/* Diseño Responsivo Básico */
-@media (max-width: 600px) {
-    main {
-        margin: 20px auto;
-        padding: 20px 15px;
-    }
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1E003D;
+    color: #777;
+}
 
-    nav ul li {
-        margin: 0 10px;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+small {
+    color: #aaaaaa;
 }
