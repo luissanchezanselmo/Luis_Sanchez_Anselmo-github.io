@@ -1,19 +1,17 @@
 /* -------------------- Estilos Generales y del Cuerpo de la Página -------------------- */
 body {
-    /*
-        Cambiamos el degradado para tener zonas más definidas, con un punto
-        de luz en la izquierda y un fondo más oscuro en la derecha.
-    */
+    /* Combinación de degradado radial y lineal */
     background:
-        radial-gradient(circle at 10% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 60%),
-        linear-gradient(to right, #0a1128, #001f3f, #0a1128);
+        /* El degradado radial crea el punto de luz en la esquina superior izquierda */
+        radial-gradient(circle at 10% 10%, #2ab4cc, #0a1128 40%),
+        /* El degradado lineal es el fondo principal */
+        linear-gradient(to bottom right, #0a1128, #001f3f, #0a1128);
     
     background-attachment: fixed;
-    background-size: 100% 100%;
-    color: #f0f8ff; /* Blanco marfil para un mejor contraste */
-    font-family: 'Arial', sans-serif;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #f0f8ff;
     line-height: 1.6;
 }
 
