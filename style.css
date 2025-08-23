@@ -1,17 +1,27 @@
+/*
+    Este archivo contiene los estilos CSS para el portafolio personal.
+    Incluye un fondo con múltiples degradados y estilos para la estructura
+    principal como encabezado, navegación y secciones de contenido.
+*/
+
 /* -------------------- Estilos Generales y del Cuerpo de la Página -------------------- */
 body {
-    /* Combinación de degradado radial y lineal */
-    background:
-        /* El degradado radial crea el punto de luz en la esquina superior izquierda */
-        radial-gradient(circle at 10% 10%, #2ab4cc, #0a1128 40%),
-        /* El degradado lineal es el fondo principal */
-        linear-gradient(to bottom right, #0a1128, #001f3f, #0a1128);
+    /* Múltiples degradados radiales para los puntos de luz de colores.
+       Cada degradado se posiciona en un punto diferente de la página.
+    */
+    background-image:
+        radial-gradient(circle at 20% 20%, #778EC5 0%, transparent 60%),
+        radial-gradient(circle at 80% 30%, #4DB1C4 0%, transparent 50%),
+        radial-gradient(circle at 50% 70%, #AED9E0 0%, transparent 40%),
+        radial-gradient(circle at 10% 80%, #BDBDBD 0%, transparent 70%),
+        linear-gradient(to bottom, #E5DBC9, transparent 80%);
     
     background-attachment: fixed;
-    height: 100vh;
+    background-size: cover;
     margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
-    color: #f0f8ff;
+    color: #333; /* Un color de texto base */
     line-height: 1.6;
 }
 
