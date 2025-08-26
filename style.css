@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    color: #e0f7fa; /* Cambié el color del texto base a un azul muy claro */
+    color: #e0f7fa; /* Un color de texto claro */
     line-height: 1.6;
 }
 
@@ -48,7 +48,7 @@ header {
 header h1 {
     margin-top: 0;
     font-size: 2.5rem;
-    color: #4dc2ff; /* Azul brillante para el título principal */
+    color: #4dc2ff;
 }
 
 /* -------------------- Estilos de la Barra de Navegación (Nav) -------------------- */
@@ -76,24 +76,54 @@ nav ul li a:hover {
     color: #4dc2ff;
 }
 
-/* -------------------- Estilos del Contenido Principal (Main) -------------------- */
+/* -------------------- Estilos del Contenido Principal y Animaciones -------------------- */
 main {
     max-width: 960px;
     margin: 20px auto;
     padding: 20px;
-    /* Fondo semi-transparente para el difuminado */
-    background-color: rgba(10, 17, 40, 0.75); /* Ajusté un poco la opacidad */
+    background-color: rgba(10, 17, 40, 0.75);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #f0f8ff; /* Texto blanco marfil */
+    color: #f0f8ff;
+
+    /* Propiedades clave para la animación */
+    position: relative;
+    overflow: hidden;
+    min-height: 60vh; /* Asegura que la sección activa tenga un alto mínimo */
 }
 
+/* Las secciones se posicionan de forma absoluta para superponerse */
 section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    background-color: transparent; /* Fondo transparente para las secciones */
+    background-color: transparent;
     box-shadow: none;
+
+    /* Estado inicial: las secciones están fuera de la pantalla a la derecha y ocultas */
+    transform: translateX(100%);
+    opacity: 0;
+    /* Transición suave para el movimiento y la opacidad */
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+/* Clase para la sección que se va a mostrar */
+section.seccion-activa {
+    /* Mueve la sección a su posición visible */
+    position: relative;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Clase para las secciones que se acaban de ocultar (para el efecto de deslizamiento) */
+.oculto {
+    position: absolute;
+    transform: translateX(-100%);
+    opacity: 0;
 }
 
 h2, h3, h4 {
