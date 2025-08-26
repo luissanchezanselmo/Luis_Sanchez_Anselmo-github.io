@@ -6,75 +6,32 @@
 
 /* -------------------- Estilos Generales y del Cuerpo de la Página -------------------- */
 body {
-    /* Múltiples degradados radiales para los puntos de luz de colores.
-       Cada degradado se posiciona en un punto diferente de la página.
-    */
     background-image:
         radial-gradient(circle at 20% 20%, #778EC5 0%, transparent 60%),
         radial-gradient(circle at 80% 30%, #4DB1C4 0%, transparent 50%),
         radial-gradient(circle at 50% 70%, #AED9E0 0%, transparent 40%),
         radial-gradient(circle at 10% 80%, #BDBDBD 0%, transparent 70%),
         linear-gradient(to bottom, #E5DBC9, transparent 80%);
-
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    color: #e0f7fa; /* Un color de texto claro */
+    color: #e0f7fa;
     line-height: 1.6;
 }
-
-/* Estilos para enlaces en general */
-a {
-    color: #4dc2ff;
-    text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #f0f8ff;
-}
+a { color: #4dc2ff; text-decoration: none; transition: color 0.3s ease, text-decoration 0.3s ease; }
+a:hover { text-decoration: underline; color: #f0f8ff; }
 
 /* -------------------- Estilos del Encabezado (Header) -------------------- */
-header {
-    text-align: center;
-    padding: 2rem 0;
-    background-color: rgba(10, 17, 40, 0.7);
-    border-bottom: 2px solid rgba(0, 31, 63, 0.5);
-}
-
-header h1 {
-    margin-top: 0;
-    font-size: 2.5rem;
-    color: #4dc2ff;
-}
+header { text-align: center; padding: 2rem 0; background-color: rgba(10, 17, 40, 0.7); border-bottom: 2px solid rgba(0, 31, 63, 0.5); }
+header h1 { margin-top: 0; font-size: 2.5rem; color: #4dc2ff; }
 
 /* -------------------- Estilos de la Barra de Navegación (Nav) -------------------- */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    background-color: rgba(0, 31, 63, 0.8);
-    border-bottom: 2px solid #4dc2ff;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #f0f8ff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #4dc2ff;
-}
+nav ul { list-style-type: none; padding: 0; text-align: center; background-color: rgba(0, 31, 63, 0.8); border-bottom: 2px solid #4dc2ff; }
+nav ul li { display: inline; margin: 0 15px; }
+nav ul li a { color: #f0f8ff; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
+nav ul li a:hover { color: #4dc2ff; }
 
 /* -------------------- Estilos del Contenido Principal y Animaciones -------------------- */
 main {
@@ -85,14 +42,10 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #f0f8ff;
-
-    /* Propiedades clave para la animación */
     position: relative;
     overflow: hidden;
-    min-height: 60vh; /* Asegura que la sección activa tenga un alto mínimo */
+    min-height: 60vh;
 }
-
-/* Las secciones se posicionan de forma absoluta para superponerse */
 section {
     position: absolute;
     top: 0;
@@ -103,63 +56,24 @@ section {
     border-radius: 8px;
     background-color: transparent;
     box-shadow: none;
-
-    /* Estado inicial: las secciones están fuera de la pantalla a la derecha y ocultas */
     transform: translateX(100%);
     opacity: 0;
-    /* Transición suave para el movimiento y la opacidad */
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
-
-/* Clase para la sección que se va a mostrar */
 section.seccion-activa {
-    /* Mueve la sección a su posición visible */
     position: relative;
     transform: translateX(0);
     opacity: 1;
 }
-
-/* Clase para las secciones que se acaban de ocultar (para el efecto de deslizamiento) */
 .oculto {
-    position: absolute;
     transform: translateX(-100%);
     opacity: 0;
 }
-
-h2, h3, h4 {
-    color: #4dc2ff;
-    border-bottom: 1px solid #4dc2ff;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.proyecto-item {
-    margin-bottom: 20px;
-    border: 1px solid #001f3f;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-small {
-    color: #aaaaaa;
-}
+h2, h3, h4 { color: #4dc2ff; border-bottom: 1px solid #4dc2ff; padding-bottom: 5px; }
+ul { list-style-type: square; padding-left: 20px; }
+.proyecto-item { margin-bottom: 20px; border: 1px solid #001f3f; padding: 15px; border-radius: 5px; }
+img { max-width: 100%; height: auto; display: block; margin-bottom: 20px; border-radius: 5px; }
+small { color: #aaaaaa; }
 
 /* -------------------- Estilos del Pie de Página (Footer) -------------------- */
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #aaa;
-}
+footer { text-align: center; padding: 1rem 0; background-color: rgba(0, 0, 0, 0.5); color: #aaa; }
